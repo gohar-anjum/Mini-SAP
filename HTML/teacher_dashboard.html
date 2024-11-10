@@ -3,37 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teacher Dashboard</title>
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <title>Teacher Dashboard - MINI SAP</title>
 </head>
 <body>
-    <div class="sidebar">
-        <h2>MINI SAP</h2>
-        <ul>
-            <li><a href="#manageCourses"><i class="fas fa-book"></i> Manage Courses</a></li>
-            <li><a href="#reviewAssignments"><i class="fas fa-file-alt"></i> Review Assignments</a></li>
-            <li><a href="#gradeSubmissions"><i class="fas fa-star"></i> Grade Submissions</a></li>
-            <li><a href="#settings"><i class="fas fa-cogs"></i> Settings</a></li>
-            <li><a href="#logout"><i class="fas fa-sign-out-alt"></i> Log Out</a></li>
-        </ul>
-    </div>
-    <div class="main-content">
-        <div class="header">
+    <div class="dashboard-container">
+        <main class="content">
             <h1>Teacher Dashboard</h1>
-            <div class="profile">Profile</div>
-        </div>
-        <div class="content">
-            <section id="manageCourses" class="card">
-                <i class="fas fa-book card-icon"></i>
-                <h2>Manage Courses</h2>
-                <p>Create and edit course materials.</p>
-                <button class="btn">View More</button>
-            </section>
-            <section id="reviewAssignments" class="card">
-                <i class="fas fa-file-alt card-icon"></i>
-                <h2>Review Assignments</h2>
-                <p>View and provide feedback on assignments.</p>
-                <button class="btn">View More</button>
-            </section>
-            <section id="gradeSubmissions" class=
+            <div class="card-grid">
+                <div class="card">
+                    <i class="fas fa-chalkboard-teacher"></i>
+                    <h3>Class Management</h3>
+                    <p>Manage your classes and schedules.</p>
+                </div>
+                <div class="card">
+                    <i class="fas fa-book"></i>
+                    <h3>Assignments</h3>
+                    <p>Create and manage assignments for students.</p>
+                </div>
+                <div class="card">
+                    <i class="fas fa-graduation-cap"></i>
+                    <h3>Student Grades</h3>
+                    <p>Review and update student grades.</p>
+                </div>
+                <div class="card">
+                    <i class="fas fa-comments"></i>
+                    <h3>Feedback</h3>
+                    <p>Provide feedback on student work.</p>
+                </div>
+                <div class="card">
+                    <i class="fas fa-calendar-alt"></i>
+                    <h3>Attendance</h3>
+                    <p>Track student attendance records.</p>
+                </div>
+                <div class="card">
+                    <i class="fas fa-bell"></i>
+                    <h3>Announcements</h3>
+                    <p>Share announcements with your classes.</p>
+                </div>
+                <div class="card">
+                    <i class="fas fa-users"></i>
+                    <h3>Parent Communication</h3>
+                    <p>Engage with parents about student progress.</p>
+                </div>
+                <div class="card">
+                    <i class="fas fa-folder-open"></i>
+                    <h3>Resources</h3>
+                    <p>Access teaching materials and resources.</p>
+                </div>
+            </div>
+        </main>
+        <aside class="sidebar">
+            <div class="profile">
+                <img src="../images/teacher-profile.jpg" alt="Teacher Profile">
+                <h3>Teacher Name</h3>
+                <p>Role: Teacher</p>
+            </div>
+            <nav class="menu">
+                <ul>
+                    <li><a href="#">Dashboard Home</a></li>
+                    <li><a href="#">Class Management</a></li>
+                    <li><a href="#">Assignments</a></li>
+                    <li><a href="#">Grades</a></li>
+                    <li><a href="#">Logout</a></li>
+                </ul>
+            </nav>
+        </aside>
+    </div>
+    <script src="../js/script.js"></script>
+</body>
+</html>
